@@ -20,6 +20,10 @@
       </div>  
     </div>
 
+    <div v-if="step == 3">
+      <MyPage/>
+    </div>
+
   </div>
 </template>
 
@@ -27,6 +31,7 @@
 <script>
 import Post from "./Post.vue";
 import FilterBox from "./FilterBox.vue";
+import MyPage from './MyPage.vue'
 
 export default {
   name : 'vuestgramContainer',
@@ -44,7 +49,7 @@ export default {
     })
   },
   components: {
-    Post, FilterBox
+    Post, FilterBox, MyPage
   },
   props : {
     vuestaDatas : Object,

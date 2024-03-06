@@ -11,7 +11,7 @@
   </div>
 
   <Container @write="postWrite = $event" :vuestaDatas="vuestaDatas" :step="step" :imageUrl="imageUrl"/>
-  <button @click="more">더보기</button>
+  <!-- <button @click="more">더보기</button> -->
 
   <div class="footer">
     <ul class="footer-button-plus">
@@ -19,8 +19,6 @@
       <label for="file" class="input-plus">+</label>
     </ul>
   </div>
-
-
 
 </template>
 
@@ -33,7 +31,7 @@ export default {
   name: 'App',
   data() {
     return {
-      step : 0,
+      step : 3,
       moreClickNum : 0,
       vuestaDatas : postData,
       imageUrl : '',
